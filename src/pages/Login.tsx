@@ -35,8 +35,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-white to-gray-100">
-      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-white to-gray-100">
+      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md mx-auto">
         <div className="flex flex-col items-center space-y-2 mb-6">
           <div className="bg-audit-blue rounded-full p-3">
             <FolderOpen className="h-8 w-8 text-white" />
