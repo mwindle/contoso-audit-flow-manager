@@ -32,7 +32,7 @@ const EngagementDetail = () => {
   const navigate = useNavigate();
   const { isAuditor } = useAuth();
   const { toast } = useToast();
-  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(true);
   
   // Get engagement data (would be fetched from API in a real app)
   const engagement = mockEngagements.find(e => e.id === id);

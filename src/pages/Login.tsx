@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { FolderOpen } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
+import { ChatAuthProvider } from '@/lib/ChatAuthProvider';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -22,6 +23,7 @@ const Login = () => {
 
     try {
       await login(email, password);
+      await ChatAuthProvider.getInstance();;
       navigate('/dashboard');
     } catch (error) {
       toast({
