@@ -9,12 +9,14 @@ interface ChatButtonProps {
 }
 
 const ChatButton: React.FC<ChatButtonProps> = ({ onClick, isOpen }) => {
+  if (isOpen) return null;
+  
   return (
     <Button
       className="fixed bottom-6 right-6 rounded-full shadow-lg z-50"
       size="icon"
       onClick={onClick}
-      aria-label={isOpen ? "Close chat" : "Open chat"}
+      aria-label="Open chat"
     >
       <MessageSquare className="h-5 w-5" />
     </Button>
