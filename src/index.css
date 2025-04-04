@@ -120,3 +120,7 @@
     @apply bg-audit-status-draft/20 text-audit-status-draft;
   }
 }
+
+iframe#sharepoint-embedded-chat {
+  min-width: 500px;
+}
